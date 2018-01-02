@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<title>大爱城</title>
+<link href="style/main.css" rel="stylesheet" type="text/css" />
+<link href="style/index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="script/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="script/easing.js"></script>
+<script language="javascript" type="text/javascript" src="script/js.js"></script>
+<script language="javascript" type="text/javascript" src="script/fun.js"></script>
+<script language="javascript" type="text/javascript" src="script/form.js"></script>
+<link href="script/slick.css" rel="stylesheet" type="text/css" />
+<script src="script/slick.js"></script>
+</head>
+
+<body>
+<div class="topDiv">
+<div class="wal">
+  <ul class="fr">
+    <li><a href=""><img src="image/img20_1.png"></a></li>
+    <li><a href="">OA</a></li>
+    <li><a href=""><img src="image/img20_2.png"></a></li>
+    <li><a href="" class="on">中文</a> / <a href="">EN</a></li>
+  </ul>
+</div>
+</div>
+<div class="headDiv">
+<div class="wal">
+  <a href="" class="logo"><img src="image/logo.png"></a>
+  <div class="nav">
+    <ul>
+      <li><a href="">首页</a></li>
+      <li><a href="" class="sNavA">走进大爱</a></li>
+      <li><a href="" class="sNavA">新闻中心</a></li>
+      <li><a href="" class="sNavA">核心业务</a></li>
+      <li><a href="" class="sNavA">产业布局</a></li>
+      <li><a href="" class="sNavA">社会责任</a></li>
+      <li><a href="" class="on">人才发展</a></li>
+      <li><a href="">智慧社区</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<!---->
+<div class="sNav">
+<div class="bg">
+<div class="wal">
+  <div class="list">
+    <ul>
+      <li><a href="">公司介绍</a></li>
+      <li><a href="">发展历程</a></li>
+      <li><a href="">企业文化</a></li>
+      <li><a href="">总裁致辞</a></li>
+    </ul>
+  </div>
+  <div class="list">
+    <ul>
+      <li><a href="">集团信息</a></li>
+      <li><a href="">媒体报道</a></li>
+      <li><a href="">行业信息</a></li>
+    </ul>
+  </div>
+  <div class="list">
+    <ul>
+      <li><a href="">大爱 · 养老</a></li>
+      <li><a href="">大爱 · 教育</a></li>
+      <li><a href="">大爱 · 医疗</a></li>
+      <li><a href="">大爱 · 农业</a></li>
+      <li><a href="">大爱 · 地产</a></li>
+      <li><a href="">大爱 · 投资</a></li>
+    </ul>
+  </div>
+  <div class="list">
+    <ul>
+      <li><a href="">大爱 · 城</a></li>
+      <li><a href="">大爱 · 小镇</a></li>
+    </ul>
+  </div>
+  <div class="list">
+    <ul>
+      <li><a href="">大爱理念</a></li>
+      <li><a href="">公益基金</a></li>
+      <li><a href="">大爱荣誉</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="pageBanner" style="background:url(image/nimg1920_11.jpg) center no-repeat;"></div>
+<div class="job_01">
+<div class="wal">
+    <div class="title">大爱人才观</div>
+    <div class="content">
+    大爱城乘持"专业、创新、信任、友爱"的用人理念，尊重员工的职业发展与情感诉求。大爱人是带着爱在一起工作的亲密伙伴，大爱城是你成就梦想的最佳舞台。
+    </div>
+</div>
+</div>
+
+<div class="job_02">
+    <div class="title">大爱舞台</div>
+    <div class="btn">
+      <ul>
+        <li>发展平台</li>
+        <li class="on">人才培养</li>
+        <li>全面薪酬</li>
+        <li>成长激励</li>
+      </ul>
+    </div>
+    <div class="list" style="display:none;"></div>
+    <div class="list">
+      <div class="wal">
+        <ul>
+          <li class="li_01">入职</li>
+          <li class="li_02">企业内训</li>
+          <li class="li_03">外派学习</li>
+          <li class="li_04">职业导师</li>
+          <li class="li_05">专家讲座</li>
+        </ul>
+      </div>
+    </div>
+    <div class="list" style="display:none;"></div>
+    <div class="list" style="display:none;"></div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$('.job_02').find('.btn').find('li').each(function(i){
+		$(this).click(function(){
+			$('.job_02').find('.btn').find('li').removeClass('on');
+			$(this).addClass('on');
+			$('.job_02').find('.list').hide();
+			$('.job_02').find('.list').eq(i).fadeIn(300);
+			})
+		})
+	})
+</script>
+
+<div class="job_03">
+<div class="wal">
+    <div class="title">大爱故事</div>
+    <div class="content">
+    我们倡导"带着爱工作"的理念，创建温馨如家的办公环境，提供充满爱心的工作支持，组织各类休闲运动和热爱生活的家庭活动，让我们的工作和生活更有风采。旗下大爱公益基金引导着员工积极参与慈善等社会公益活动，回馈社会。
+    </div>
+</div>
+</div>
+
+<div class="jobFoot">
+<div class="layer"><em>欢迎与我们一起带着爱工作！</em><a href="">加入我们</a></div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>$('.jobFoot').offset().top-$(window).height()){
+			$('.jobFoot').addClass('on');
+			}else{
+				$('.jobFoot').removeClass('on');
+				}
+		})
+	})
+</script>
+
+<div class="footDiv">
+<div class="wal">
+   <div class="img"><a href=""><img src="image/img58.png"></a></div>
+   <div class="list">
+     <ul>
+       <li><img src="image/img24_1.png">服务热线：4008-900-520</li>
+       <li><img src="image/img24_2.png">+86 010 8593 0606</li>
+       <li><img src="image/img24_3.png">北京市朝阳区姚家园路77号朝阳体育中心东门</li>
+     </ul>
+   </div>
+   <div class="btn">
+     <ul>
+       <li class="li_01"><a href="">微信</a></li>
+       <li class="li_02"><a href="">微博</a></li>
+       <li class="li_03"><a href="">手机版</a></li>
+     </ul>
+   </div>
+   <a href="" class="btn-1">联系我们</a>
+</div>
+</div>
+<div class="foot">
+Copyright 2016 LOVE FOR LIFE|All Rights 京ICP备15033863号-1 <em>网站设计：<a href="">盛世阳光</a></em>
+</div>
+</body>
+</html>

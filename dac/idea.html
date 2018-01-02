@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<title>大爱城</title>
+<link href="style/main.css" rel="stylesheet" type="text/css" />
+<link href="style/index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="script/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="script/easing.js"></script>
+<script language="javascript" type="text/javascript" src="script/js.js"></script>
+<script language="javascript" type="text/javascript" src="script/fun.js"></script>
+<script language="javascript" type="text/javascript" src="script/form.js"></script>
+<link href="script/slick.css" rel="stylesheet" type="text/css" />
+<script src="script/slick.js"></script>
+</head>
+
+<body>
+<div class="topDiv">
+<div class="wal">
+  <ul class="fr">
+    <li><a href=""><img src="image/img20_1.png"></a></li>
+    <li><a href="">OA</a></li>
+    <li><a href=""><img src="image/img20_2.png"></a></li>
+    <li><a href="" class="on">中文</a> / <a href="">EN</a></li>
+  </ul>
+</div>
+</div>
+<div class="headDiv">
+<div class="wal">
+  <a href="" class="logo"><img src="image/logo.png"></a>
+  <div class="nav">
+    <ul>
+      <li><a href="">首页</a></li>
+      <li><a href="" class="sNavA">走进大爱</a></li>
+      <li><a href="" class="sNavA">新闻中心</a></li>
+      <li><a href="" class="sNavA">核心业务</a></li>
+      <li><a href="" class="sNavA">产业布局</a></li>
+      <li><a href="" class="sNavA on">社会责任</a></li>
+      <li><a href="">人才发展</a></li>
+      <li><a href="">智慧社区</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<!---->
+<div class="sNav">
+<div class="bg">
+<div class="wal">
+  <div class="list">
+    <ul>
+      <li><a href="">公司介绍</a></li>
+      <li><a href="">发展历程</a></li>
+      <li><a href="">企业文化</a></li>
+      <li><a href="">总裁致辞</a></li>
+    </ul>
+  </div>
+  <div class="list">
+    <ul>
+      <li><a href="">集团信息</a></li>
+      <li><a href="">媒体报道</a></li>
+      <li><a href="">行业信息</a></li>
+    </ul>
+  </div>
+  <div class="list">
+    <ul>
+      <li><a href="">大爱 · 养老</a></li>
+      <li><a href="">大爱 · 教育</a></li>
+      <li><a href="">大爱 · 医疗</a></li>
+      <li><a href="">大爱 · 农业</a></li>
+      <li><a href="">大爱 · 地产</a></li>
+      <li><a href="">大爱 · 投资</a></li>
+    </ul>
+  </div>
+  <div class="list">
+    <ul>
+      <li><a href="">大爱 · 城</a></li>
+      <li><a href="">大爱 · 小镇</a></li>
+    </ul>
+  </div>
+  <div class="list">
+    <ul>
+      <li><a href="">大爱理念</a></li>
+      <li><a href="">公益基金</a></li>
+      <li><a href="">大爱荣誉</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="pageBanner" style="background:url(image/nimg1920_6.jpg) center no-repeat;"></div>
+<div class="pageBg">
+<div class="wal">
+<!--wal-->
+<div class="pageBgbg"></div>
+<div class="fl sideNav">
+  <div class="title">社会责任</div>
+  <ul>
+    <li><a href="" class="on">大爱理念</a></li>
+    <li><a href="">公益基金</a></li>
+    <li><a href="">大爱荣誉</a></li>
+  </ul>
+</div>
+<div class="fr w757">
+  <div class="pageNow"><a href=""><img src="image/nimg17.png"/></a><em>></em><a href="">社会责任</a><em>></em><span>大爱理念</span></div>
+  <!--内容-->
+  <div class="AcademyTag">
+    <div class="list">
+    <div class="slick"><a href="javascript:;" class="on">爱晚工程</a></div>
+    <div class="slick"><a href="javascript:;">领导小组</a></div>
+    <div class="slick"><a href="javascript:;">大爱脚步</a></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  $(function(){
+      $('.AcademyTag').find('.list').slick({
+              dots: false,
+              infinite: false,
+              autoplay:false,
+              arrows: true,
+              speed: 500,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+			  initialSlide:0
+          });
+	  $('.AcademyTag').find('.slick').each(function(i){
+		  $(this).find('a').click(function(){
+			  $('.AcademyTag').find('.slick').find('a').removeClass('on');
+			  $(this).addClass('on');
+			  $('.AcademyTagD').hide();
+			  $('.AcademyTagD').eq(i).fadeIn(300);
+			  })
+		  })
+      })
+  </script>
+  <div class="idea AcademyTagD">
+    <div class="content content2">
+    一个国家，一个民族，一个家庭，只有让老年人生活得幸福，安享晚年，这个家庭，这个民族，这个国家才有尊严。
+    <br /><br />
+    作为国家重大民生工程"爱晚工程"核心示范单位，大爱城秉持企业社会责任感，以投身中国变革社会养老民生福祉事业为企愿，努力探索中国文化背景下老龄产业发展新路。
+    </div>
+    <h2>［渐在老去的社会］</h2>
+    <div class="msg">银发浪潮深刻影响中国的经济、社会、人口和家庭结构</div>
+    <div class="content">
+    　　2016年3月国家发改委公布数据，截止2015年底，我国60岁以上老人达到2.22亿，并且近年持续保持每年1000万的增长。目前，中国是世界上老龄人口最多的国家，正面临历史上规模最大、发展速度最快的老龄化进程。巨大的银发浪潮深刻影响中国的经济、社会、人口和家庭结构，为养老带来严峻挑战，年轻人想照顾年迈的父母但没有时间和精力，老人渴望陪伴却又不想给子女添麻烦；与此同时，孤独、寂寞、"空巢"、"失能"相伴，中国老人的晚年生活失去了应有的尊严和快乐，养老正成为关系到千家万户和国计民生的重大社会问题。
+    </div>
+    <div class="imgDiv"><img src="image/nimg756_5.jpg"/></div>
+    <h2>［爱晚工程］</h2>
+    <div class="msg">国家爱晚，老龄化社会的国家工程</div>
+    <div class="content">
+    　　在此背景下，我国政府应对社会老龄化的重大民生工程——爱晚工程应运而生。爱晚工程是在全国人大、国务院的关怀下，由国家民政部、老龄委、中国社会工作联合会等有关部委组织发起，旨在推进老年事业发展、提高老年人生活质量、实现社会和谐，建设完善中国社会化养老服务体系，是我国社会化养老的一项系统工程。爱晚工程领导小组，由全国人大常委会副委员长司马义·艾买提任名誉组长，全国人大常委会副委员长、民革中央主席周铁农任组长。
+    </div>
+    <div class="imgDiv"><img src="image/nimg756_8.jpg"/></div>
+  </div>
+  <div class="AcademyTagD leader" style="display:none;">
+    <div class="title">［爱晚工程领导小组领导］</div>
+    <div class="list">
+      <ul>
+        <li>
+           <div class="imgDiv"><img src="image/nimg115_1.jpg"/></div>
+           <div class="name">司马义·艾买提</div>
+           <div class="content">第十届全国人大常委会副委员长<br />爱晚工程领导小组名誉组长</div>
+        </li>
+        <li>
+           <div class="imgDiv"><img src="image/nimg115_2.jpg"/></div>
+           <div class="name">周铁农</div>
+           <div class="content">第十一届全国人大常委会副委员长<br />爱晚工程领导小组名誉组长
+           </div>
+        </li>
+      </ul>
+    </div>
+    <div class="title">［爱晚工程领导小组副组长］</div>
+    <div class="list2">
+      <ul>
+        <li><span>项怀诚</span>财政部原部长</li>
+        <li><span>刘江</span>国家发展和改革委员会原副主任</li>
+        <li><span>陈广文</span>北京市政协原主任</li>
+        <li><span>徐瑞新</span>民政部原副部长、中国社会工作联合会名誉会长</li>
+        <li><span>刘江</span>国家发展和改革委员会原副主任</li>
+        <li><span>陈广文</span>北京市政协原主任</li>
+        <li><span>徐瑞新</span>民政部原副部长、中国社会工作联合会名誉会长</li>
+      </ul>
+    </div>
+  </div>
+  <div class="AcademyTagD" style="display:none;">暂无数据</div>
+  <!--内容End-->
+</div>
+<div class="h50"></div>
+<!--walEnd-->
+</div>
+</div>
+
+<div class="footDiv">
+<div class="wal">
+   <div class="img"><a href=""><img src="image/img58.png"></a></div>
+   <div class="list">
+     <ul>
+       <li><img src="image/img24_1.png">服务热线：4008-900-520</li>
+       <li><img src="image/img24_2.png">+86 010 8593 0606</li>
+       <li><img src="image/img24_3.png">北京市朝阳区姚家园路77号朝阳体育中心东门</li>
+     </ul>
+   </div>
+   <div class="btn">
+     <ul>
+       <li class="li_01"><a href="">微信</a></li>
+       <li class="li_02"><a href="">微博</a></li>
+       <li class="li_03"><a href="">手机版</a></li>
+     </ul>
+   </div>
+   <a href="" class="btn-1">联系我们</a>
+</div>
+</div>
+<div class="foot">
+Copyright 2016 LOVE FOR LIFE|All Rights 京ICP备15033863号-1 <em>网站设计：<a href="">盛世阳光</a></em>
+</div>
+</body>
+</html>
