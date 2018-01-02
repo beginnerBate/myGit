@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+<title>评果堆儿</title>
+<script language="javascript" type="text/javascript" src="script/jquery-1.7.1.min.js"></script>
+<link href="script/fakeLoader.css" rel="stylesheet" type="text/css" />
+<script src="script/fakeLoader.min.js"></script>
+<link type="text/css" rel="stylesheet" href="style/animate.min.css" />
+<link href="style/main.css" rel="stylesheet" type="text/css" />
+<link href="style/index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="script/js.js"></script>
+<script language="javascript" type="text/javascript" src="script/fun.js"></script>
+<script language="javascript" type="text/javascript" src="kinetic-v5.1.0/kinetic-v5.1.0.js"></script>
+
+<link rel="stylesheet" href="jQuerySlider/css/rangeslider.css">
+<script src="jQuerySlider/js/rangeslider.min.js"></script>
+
+</head>
+
+<body>
+<div class="fakeloader"></div>
+<script type="text/javascript">
+var loginTime=5000;
+$(".fakeloader").fakeLoader({
+		timeToHide:loginTime,
+		bgColor:"#000",
+		spinner:"spinner2"
+	});
+	
+setTimeout(function(){
+		  page1Fun();//第一屏
+		  },loginTime+200);
+		  
+</script>
+
+<div class="walTips"><div>请调整到适合屏幕阅读的方向</div></div>
+
+<!--第一屏-->
+<div class="wal" id="pageWal-1">
+  <div class="canvasBg" id="canvasBg"></div>
+  <div class="content">
+    <p>
+    如果说<br>一切都是天意<br>一切都是命运<br>谁也逃不离…<br>找工作累死累活又何必
+    </p>
+  </div>
+  <div class="img01"><img src="image/img32.png" width="100%"></div>
+  <div class="img02"><img src="image/img40.png" width="100%"></div>
+  <div class="startBtn">
+    <div class="bg"><div></div></div>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="text"></div>
+  </div>
+</div>
+
+
+<!--第二屏-->
+<div class="wal" id="pageWal-2">
+  <div class="title"><h2>操作提示</h2>Operation tips</div>
+  <ul>
+    <li class="li_01">
+    <div class="bg">
+      <p>每道题目均有两个答案：<span>A 和 B</span>。请仔细阅读题目，按照与你性格相符的程度分别给 A 和 B 赋予一个分数，并使一组中的两个分数之和为<span>"5"</span>。最后，请在问卷后的答题纸上相应的方格内填上相应的分数。</p>
+      <div class="ico"></div>
+    </div>
+    </li>
+    <li class="li_02">
+    <div class="bg">
+      <p>请在心态平和及时间充足的情况下才开始答题。</p>
+    </div>
+    </li>
+    <li class="li_03">
+    <div class="bg">
+      <p>请注意，题目答案无对错之分，你不需要考虑哪个答案"应该"更好，而且不要在任何问题上思考太久，而是应该凭你心里的第一反应做出选择。如果你觉得在不同的情境里，两个答案或许都能反映你的倾向，请选择一个对于你的行为方式来说最自然、最顺畅和最从容的答案。</p>
+      <div class="ico"></div>
+    </div>
+    </li>
+  </ul>
+  <div class="btn">
+  <div class="bg1"><div class="bg2"><em>我知道了</em><div></div></div></div>
+  </div>
+</div>
+
+<!--第三屏-->
+<!--第1题-->
+<div class="wal testWal" id="pageWal-3">
+  <div class="testBox">
+     <div class="testTitle">
+       <em><b>1</b>/48</em><span>one</span>
+       <h2>下列哪一种是你的一般生活取向？</h2>
+     </div>
+     <div class="testList">
+       <ul>
+         <li class="li_01"><em>A<span>▪</span></em>只管做吧</li>
+         <li class="li_02"><em>B<span>▪</span></em>找出多种不同选择找出多种不同选择找出多种不同选择</li>
+       </ul>
+     </div>
+  </div>
+  <div class="testSlider">
+  <div class="bg">
+     <em>A<span>▪</span><i>0</i></em>
+     <em class="em-1">B<span>▪</span><i>5</i></em>
+     <div class="slider">
+        <div class="bg-1"></div>
+        <input type="range" min="0" max="5" step="1" value="2" data-rangeslider>
+        <div class="tips"><div><span></span><span class="span-1"></span></div><i></i></div>
+     </div>
+  </div>
+  </div>
+  <div class="pageBtn pageBtn-1"><a href="javascript:;">下一题</a></div>
+</div>
+<!--第2题-->
+<div class="wal testWal">
+  <div class="testBox">
+     <div class="testTitle">
+       <em><b>2</b>/48</em><span>one</span>
+       <h2>下列哪一种是你的一般生活取向？</h2>
+     </div>
+     <div class="testList">
+       <ul>
+         <li class="li_01"><em>A<span>▪</span></em>只管做吧找出多种不同选择找出多种不同选择找出多种不同选择</li>
+         <li class="li_02"><em>B<span>▪</span></em>找出多种不同选择</li>
+       </ul>
+     </div>
+  </div>
+  <div class="testSlider">
+  <div class="bg">
+     <em>A<span>▪</span><i>0</i></em>
+     <em class="em-1">B<span>▪</span><i>5</i></em>
+     <div class="slider">
+        <div class="bg-1"></div>
+        <input type="range" min="0" max="5" step="1" value="2" data-rangeslider>
+        <div class="tips"><div><span></span><span class="span-1"></span></div><i></i></div>
+     </div>
+  </div>
+  </div>
+  <div class="pageBtn pageBtn-1"><a href="javascript:;">下一题</a></div>
+</div>
+<!--第3题-->
+<div class="wal testWal">
+  <div class="testBox">
+     <div class="testTitle">
+       <em><b>3</b>/48</em><span>one</span>
+       <h2>你参与社交聚会时:</h2>
+     </div>
+     <div class="testList">
+       <ul>
+         <li class="li_01"><em>A<span>▪</span></em>总是能认识新朋友</li>
+         <li class="li_02"><em>B<span>▪</span></em>只跟几个亲密挚友呆在一起</li>
+       </ul>
+     </div>
+  </div>
+  <div class="testSlider">
+  <div class="bg">
+     <em>A<span>▪</span><i>0</i></em>
+     <em class="em-1">B<span>▪</span><i>5</i></em>
+     <div class="slider">
+        <div class="bg-1"></div>
+        <input type="range" min="0" max="5" step="1" value="2" data-rangeslider>
+        <div class="tips"><div><span></span><span class="span-1"></span></div><i></i></div>
+     </div>
+  </div>
+  </div>
+  <div class="pageBtn pageBtn-1"><a href="javascript:;">完成</a></div>
+</div>
+
+
+<!--第四屏-->
+<div class="wal" id="pageWal-4">
+  <div class="canvasBg" id="canvasBg4"></div>
+  <div class="pageBox">
+     <div class="pageTitle"><h2>MBTI倾向图</h2><div>类型：INFP　总倾向：45</div></div>
+     <div class="Tendency">
+       <ul>
+         <li><em>E外向</em><span>I内向</span>
+             <div class="bg"><div class="fl"></div><div class="fr"></div></div>
+         </li>
+         <li><em>S事干</em><span>N直觉</span>
+             <div class="bg"><div class="fl"></div><div class="fr"></div></div>
+         </li>
+         <li><em>T思考</em><span>F情感</span>
+             <div class="bg"><div class="fl"></div><div class="fr"></div></div>
+         </li>
+         <li><em>J判断</em><span>P直觉</span>
+             <div class="bg"><div class="fl"></div><div class="fr"></div></div>
+         </li>
+       </ul>
+     </div>
+     <div class="btnDiv">
+     <ul>
+       <li class="li_01"><div><a href="javascript:;">基本描述</a></div></li>
+       <li class="li_02"><div><a href="javascript:;">潜在弱点</a></div></li>
+       <li class="li_03"><div><a href="javascript:;">优势劣势</a></div></li>
+       <li class="li_04"><div><a href="javascript:;">职位类型</a></div></li>
+     </ul>
+     </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){
+	var TendencyArray=[30,55,18,27];
+	for(var i=0; i<TendencyArray.length; i++){
+		var thisL=TendencyArray[i];
+		var thisR=100-TendencyArray[i];
+		var _thisL=TendencyArray[i]+"%";
+		var _thisR=(100-TendencyArray[i])+"%";
+		if(thisL>thisR){
+			$('.Tendency').find('li').eq(i).find('.fl').html(_thisL);
+			}else{
+				$('.Tendency').find('li').eq(i).find('.fr').html(_thisR);
+				}
+		$('.Tendency').find('li').eq(i).find('.fl').width(_thisL);
+		$('.Tendency').find('li').eq(i).find('.fr').width(_thisR);
+		}
+	})
+</script>
+
+<!--第五屏-->
+<link href="customer/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+<script src="customer/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(window).load(function(){
+		$(".scroll").mCustomScrollbar({
+			scrollInertia:600,
+			autoDraggerLength:false
+			});
+		})
+	})
+</script>
+<div class="wal pageWal-5" id="pageWal-5">
+  <div class="canvasBg" id="canvasBg5"></div>
+  <!---->
+  <div class="pageWal-5D">
+  <div class="pageBox">
+    <div class="pageTitle"><h2>基本描述</h2>Basic description</div>
+    <div class="scroll">
+    <div class="content">
+    人是伟大的领导者和决策人。他们能轻易地看出事物具有的可能性，很高兴指导别人，使他们的想象成为现实。他们是头脑灵活的思想家和伟大的长远规划者。
+    </div>
+    </div>
+    <div class="btn"></div>
+  </div>
+  </div>
+  <!---->
+  <div class="pageWal-5D">
+  <div class="pageBox">
+    <div class="pageTitle"><h2>潜在弱点</h2>Basic description</div>
+    <div class="scroll">
+    <div class="content">
+    人是伟大的领导者和决策人。他们能轻易地看出事物具有的可能性，很高兴指导别人，使他们的想象成为现实。他们是头脑灵活的思想家和伟大的长远规划者。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。<br>
+    人是伟大的领导者和决策人。他们能轻易地看出事物具有的可能性，很高兴指导别人，使他们的想象成为现实。他们是头脑灵活的思想家和伟大的长远规划者。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。<br>
+    人是伟大的领导者和决策人。他们能轻易地看出事物具有的可能性，很高兴指导别人，使他们的想象成为现实。他们是头脑灵活的思想家和伟大的长远规划者。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。
+    </div>
+    </div>
+    <div class="btn"></div>
+  </div>
+  </div>
+  <!---->
+  <div class="pageWal-5D">
+  <div class="pageBox">
+    <div class="pageTitle"><h2>优势劣势</h2>Basic description</div>
+    <div class="scroll">
+    <div class="content">
+    人是伟大的领导者和决策人。他们能轻易地看出事物具有的可能性，很高兴指导别人，使他们的想象成为现实。他们是头脑灵活的思想家和伟大的长远规划者。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。<br>
+    人是伟大的领导者和决策人。他们能轻易地看出事物具有的可能性，很高兴指导别人，使他们的想象成为现实。他们是头脑灵活的思想家和伟大的长远规划者。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。<br>
+    人是伟大的领导者和决策人。他们能轻易地看出事物具有的可能性，很高兴指导别人，使他们的想象成为现实。他们是头脑灵活的思想家和伟大的长远规划者。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。
+    </div>
+    </div>
+    <div class="btn"></div>
+  </div>
+  </div>
+  <!---->
+  <div class="pageWal-5D">
+  <div class="pageBox">
+    <div class="pageTitle"><h2>职位类型</h2>Basic description</div>
+    <div class="scroll">
+    <div class="content">
+    人是伟大的领导者和决策人。他们能轻易地看出事物具有的可能性，很高兴指导别人，使他们的想象成为现实。他们是头脑灵活的思想家和伟大的长远规划者。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。<br>
+    人是伟大的领导者和决策人。他们能轻易地看出事物具有的可能性，很高兴指导别人，使他们的想象成为现实。他们是头脑灵活的思想家和伟大的长远规划者。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。<br>
+    人是伟大的领导者和决策人。他们能轻易地看出事物具有的可能性，很高兴指导别人，使他们的想象成为现实。他们是头脑灵活的思想家和伟大的长远规划者。
+    <br><br>
+    很有条理和分析能力，所以他们通常对要求推理和才智的任何事情都很擅长。为了在完成工作中称职，他们通常会很自然地看出所处情况中可能存在的缺陷，并且立刻知道如何改进。他们力求精通整个体系，而不是简单地把它们作为现存的接受而已。
+    </div>
+    </div>
+  </div>
+  </div>
+  <!---->
+  <div class="pageBtn"><a href="javascript:;">返回</a></div>
+</div>
+
+<script type="text/javascript">
+$('.wal').each(function(i){
+	$(this).css('z-index',100-i);
+	})
+</script>
+<script>
+$(function() {
+	var $document   = $(document);
+	var selector    = '[data-rangeslider]';
+	var $inputRange = $(selector);
+	// 初始化元素
+	$inputRange.rangeslider({
+		polyfill: false
+	});
+
+	// Example functionality to demonstrate a value feedback
+	// and change the output's value.
+	function valueOutput(element) {
+		var value = element.value;
+		var output = element.parentNode.getElementsByTagName('span')[0];
+		var output2 = element.parentNode.getElementsByTagName('span')[1];
+
+		output.innerHTML = value;
+		output2.innerHTML = 5-value;
+		
+		var this_handle = element.parentNode.getElementsByClassName("rangeslider__handle")[0];
+		var this_tips = element.parentNode.getElementsByClassName("tips")[0];
+		this_tips.style.left=this_handle.offsetLeft+"px";
+	}
+	
+	// 初始值的输出
+	for (var i = $inputRange.length - 1; i >= 0; i--) {
+		valueOutput($inputRange[i]);
+	};
+
+	// 更新值输出
+	$document.on('input', selector, function(e) {
+		valueOutput(e.target);
+	});
+
+
+});
+</script>
+
+</body>
+</html>

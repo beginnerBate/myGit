@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0px; padding:0px; font-size:12px; font-family:Arial, "微软雅黑"; color:#333; background:#00bdbf;}
+a{color:#333; text-decoration:none; outline:none;}
+a:active{star:expression(this.onFocus=this.blur());} 
+img{border:0px;}
+a:link {text-decoration: none; outline:none;}
+a:visited{text-decoration: none; outline:none;}
+a:hover{text-decoration:none; color:#1c5a97; outline:none;}
+ul, p, dl, dt, dd{padding:0px; margin:0px;}
+li{list-style-position:outside; list-style-type:none;}
+h1, h2, h3, h4, h5{font-size:14px; padding:0px; margin:0px;}
+h1{font-size:16px;}
+h5{font-size:12px;}
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both; height:0px; padding:0px; margin:0px; display:block; _display:inherit;}
+.h10{height:10px; overflow:hidden; clear:both;}
+input{background:transparent; padding:0px; font-size:12px; font-family:Arial, "微软雅黑"; color:#888; outline:none; border:0px;}
+em{font-style:normal;}
+.btn1{cursor:pointer;}
+img{vertical-align:middle;}
+
+.walTips{position:fixed; z-index:110; left:0px; top:0px; width:100%; height:100%; background:rgba(0,0,0,0.9); display:none;}
+.walTips div{background:url(../image/img75.png) center top no-repeat; width:100%; padding-top:80px; font-size:14px; color:#FFF; text-align:center; position:absolute; left:0px; top:50%; margin-top:-60px;}
+
+.wal{max-width:640px; margin:0px auto; min-height:200px; position:fixed; left:0px; top:0px; width:100%; height:100%; background:#00bdbf;}
+.wal.on{left:-200%;}
+.wal canvas{width:100%; display:block; position:absolute; left:0px; top:0px;}
+.wal .canvasBg{position:absolute; left:0px; top:0px; width:100%;}
+
+.pageBtn{position:absolute; z-index:10; left:50%; bottom:6%; margin-left:-66px; width:130px; height:44px; border:#FFF solid 1px; opacity:0; visibility:hidden;}
+.pageBtn.on{visibility:visible;}
+.pageBtn a{display:block; height:40px; line-height:40px; text-align:center; font-size:16px; color:#FFF; border:#FFF solid 1px; position:relative; top:-1px; background:#00bdbf;}
+.pageBtn-1, .pageBtn-1 a{border:#00bdbf solid 1px;}
+
+.pageBox{padding:20px; max-width:300px; margin:0 auto;}
+.pageTitle{text-align:center; color:#FFF; font-size:13px; padding:60px 0 15px 0; opacity:0;}
+.pageTitle h2{font-weight:400; font-size:18px; padding-bottom:2px;}
+.pageTitle div{background:url(../image/img516.png) center top no-repeat; background-size:auto 100%; height:35px; color:#00bdbf; position:relative; top:6px; line-height:26px;}
+
+.wal, .Tendency .bg div, .pageWal-5.onon .pageWal-5D.on, .pageWal-5.onon .pageWal-5D.on2, .startBtn, #pageWal-2 .btn .bg2 div{
+transition:All 1s ease;
+-webkit-transition:All 1s ease;
+-moz-transition:All 1s ease;
+-o-transition:All 1s ease;	
+}
+.pageBtn, .pageBtn a, #pageWal-4 .btnDiv div, #pageWal-4 .btnDiv a, .Tendency .bg{
+-moz-border-radius:30px;
+-webkit-border-radius:30px;
+border-radius:30px;	
+}
+input, .testSlider, .testSlider .bg, #pageWal-4 li, .Tendency ul, .Tendency .bg div, .startBtn div{
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;	
+}
+
